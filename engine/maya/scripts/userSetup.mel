@@ -1,0 +1,4 @@
+python("print('Start import init in Maya')");
+python("import sys; sys.path.insert(0, r'D:/SANCHEZTD4/MyDCC/pipeline/engine/maya/scripts')");
+python("import init");
+python("print('Done import init in Maya')");
