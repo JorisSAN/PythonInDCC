@@ -1,2 +1,2 @@
-python E:/SANCHEZTD4/MyDCC/pipeline/windowlauncher/launcher_pipeline.py
+python ../pipeline/windowlauncher/launcher_pipeline.py
 pause

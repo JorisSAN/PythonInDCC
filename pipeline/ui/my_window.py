@@ -1,7 +1,7 @@
 import sys, os
 
-sys.path.append(r'\\multifct\tools\pipeline\global\packages') # path to Qt package
-sys.path.append(r'D:/SANCHEZTD4/MyDCC/pipeline')
+sys.path.append(r'//multifct/tools/pipeline/global/packages') # path to Qt package
+sys.path.append(r'/pipeline')
 
 from Qt import QtWidgets, QtCompat
 
