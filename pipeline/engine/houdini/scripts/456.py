@@ -3,7 +3,9 @@ import hou
 import os
 print('Starting up Pipeline')
 
-deployment_root = os.path.dirname('/pipeline/')[0]
+here = os.path.dirname(__file__)
+
+deployment_root = here.split('/pipeline/')[0]
 
 if '//multifct/tools/pipeline/global/packages' not in sys.path:
 
