@@ -6,5 +6,9 @@ class MayaEngine(engine.Engine) :
         cmds.file(new = True, force = True)
         cmds.file(path, o = True)
         
+    def save(self):
+        cmds.file(rename="D:/SANCHEZTD4/test.ma")
+        cmds.file(save=True, type="mayaAscii")
+        
     def __str__ (self) :
         return 'Maya Engine'

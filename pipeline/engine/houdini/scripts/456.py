@@ -3,19 +3,15 @@ import hou
 import os
 print('Starting up Pipeline')
 
-here = os.path.dirname(__file__)
+here = hou.getenv('HOUDINI_SCRIPT_PATH').split(';') [-1]
+deployement_root = here.split('/pipeline/') [0]
 
-deployment_root = here.split('/pipeline/')[0]
+sys.path.append(deployement_root)  # import path project
+sys.path.append(r'C:/Users/user/Desktop/Projet/Projet-et-prog/PythonInDCC/pipeline/Qt')  # import Qt lib
 
-if '//multifct/tools/pipeline/global/packages' not in sys.path:
+from ui import my_window as mw
 
-    sys.path.append(r'/pipeline/global/packages')  # path to Qt package
-    sys.path.append(r'/pipeline/engine/houdini/scripts')  # pipeline lib
-    sys.path.append(deployment_root)  # ui lib
-
-    from ui import my_window as mw
-
-    win = mw.MyWindow()
-    win.show()
+win = mw.MyWindow()
+win.show()
 
 print('Done Pipeline config')

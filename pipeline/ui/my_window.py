@@ -1,9 +1,6 @@
 import sys, os
 
-deployment_root = os.path.dirname('/pipeline/')[0]
-
-sys.path.append(r'//multifct/tools/pipeline/global/packages') # path to Qt package
-sys.path.append(deployment_root)
+sys.path.append(r'C:\Users\user\Desktop\Projet\Projet-et-prog\PythonInDCC\pipeline') # path to Qt package
 
 from Qt import QtWidgets, QtCompat
 
