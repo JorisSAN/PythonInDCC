@@ -1,4 +1,5 @@
-python("print('Start import init in Maya')");
-python("import sys; sys.path.insert(0, r'D:/SANCHEZTD4/MyDCC/pipeline/engine/maya/scripts')");
-python("import init");
+$here = `whatIs userSetup`;
+python("here = r'" + $here + "'.replace('Script found in: ', '')");
+python("import sys,os; sys.path.insert(0, os.path.dirname(here))");
+python("import init_maya");
 python("print('Done import init in Maya')");

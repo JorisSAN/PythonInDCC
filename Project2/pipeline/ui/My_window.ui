@@ -1,85 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Selector</class>
- <widget class="QMainWindow" name="Selector">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>186</width>
-    <height>128</height>
+    <width>386</width>
+    <height>279</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Engine Selector</string>
+   <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>0</y>
-      <width>160</width>
-      <height>80</height>
+      <y>20</y>
+      <width>361</width>
+      <height>211</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QLabel" name="label">
-       <property name="font">
-        <font>
-         <family>Courier New</family>
-         <pointsize>28</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Engine</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
-       <property name="spacing">
-        <number>5</number>
-       </property>
        <item>
-        <widget class="QToolButton" name="select_button">
+        <widget class="QLabel" name="label">
          <property name="text">
-          <string>...</string>
+          <string>Open and save button</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="open_button">
          <property name="text">
-          <string>Ouvrir</string>
+          <string>Open</string>
          </property>
-         <property name="iconSize">
-          <size>
-           <width>16</width>
-           <height>16</height>
-          </size>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="save_button">
+         <property name="text">
+          <string>Save</string>
          </property>
         </widget>
        </item>
       </layout>
      </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout_2">
+       <item row="0" column="0" colspan="2">
+        <spacer name="verticalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="export_button">
+         <property name="text">
+          <string>export abc</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="name_export"/>
+       </item>
+       <item row="2" column="1">
+        <spacer name="verticalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="import_button">
+         <property name="text">
+          <string>import abc</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="import_directory"/>
+       </item>
+      </layout>
+     </item>
     </layout>
    </widget>
-   <zorder>label_2</zorder>
-   <zorder>verticalLayoutWidget</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>186</width>
+     <width>386</width>
      <height>21</height>
     </rect>
    </property>

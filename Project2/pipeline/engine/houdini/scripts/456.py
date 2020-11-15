@@ -1,17 +1,13 @@
-import sys
+import sys, os
 import hou
-import os
-print('Starting up Pipeline')
+print('Starting Houdini pipeline')
 
 here = hou.getenv('HOUDINI_SCRIPT_PATH').split(';') [-1]
-deployement_root = here.split('/pipeline/') [0]
+deployment_root = here.split('/pipeline/')[0]
 
-sys.path.append(deployement_root)  # import path project
-sys.path.append(r'C:/Users/user/Desktop/Projet/Projet-et-prog/PythonInDCC/pipeline/Qt')  # import Qt lib
+print('Script root {}'.format(deployment_root))
 
-from ui import my_window as mw
+sys.path.append(deployment_root)
+sys.path.append(r'C:\Users\user\Desktop\Projet\Projet-et-prog\Python-DCC\lib')
 
-win = mw.MyWindow()
-win.show()
-
-print('Done Pipeline config')
+print('Done Pipeline Config')
