@@ -1,38 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Pipeline</class>
+ <widget class="QMainWindow" name="Pipeline">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>386</width>
-    <height>279</height>
+    <width>729</width>
+    <height>168</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Pipeline</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>361</width>
-      <height>211</height>
+      <x>330</x>
+      <y>0</y>
+      <width>386</width>
+      <height>121</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QLabel" name="label">
+      <layout class="QFormLayout" name="formLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <family>Corbel</family>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
          <property name="text">
-          <string>Open and save button</string>
+          <string>Export alembic :</string>
          </property>
         </widget>
        </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="export_button">
+         <property name="text">
+          <string>export abc</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="name_export"/>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <family>Corbel</family>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Import alembic :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="import_button">
+         <property name="text">
+          <string>import abc</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="import_directory"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>322</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>15</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Open or Save File :</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
         <widget class="QPushButton" name="open_button">
          <property name="text">
@@ -49,56 +122,6 @@
        </item>
       </layout>
      </item>
-     <item>
-      <layout class="QFormLayout" name="formLayout_2">
-       <item row="0" column="0" colspan="2">
-        <spacer name="verticalSpacer_4">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="1" column="0">
-        <widget class="QPushButton" name="export_button">
-         <property name="text">
-          <string>export abc</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QLineEdit" name="name_export"/>
-       </item>
-       <item row="2" column="1">
-        <spacer name="verticalSpacer_7">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="3" column="0">
-        <widget class="QPushButton" name="import_button">
-         <property name="text">
-          <string>import abc</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <widget class="QLineEdit" name="import_directory"/>
-       </item>
-      </layout>
-     </item>
     </layout>
    </widget>
   </widget>
@@ -107,7 +130,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>386</width>
+     <width>729</width>
      <height>21</height>
     </rect>
    </property>

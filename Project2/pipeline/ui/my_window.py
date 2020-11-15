@@ -1,6 +1,6 @@
 import sys, os
 
-sys.path.append(r'C:/Users/user/Desktop/Projet/Projet-et-prog/Python-DCC/lib')
+sys.path.append(r'C:/Users/user/Desktop/Projet/Projet-et-prog/PythonInDCC/Project2/lib')
 
 from Qt import QtWidgets, QtCompat
 from pipeline.engine import engine
@@ -34,7 +34,7 @@ class MyWindow(QtWidgets.QMainWindow):
 
     def importation(self):
         print("import button clicked")
-        search_dir = QtWidgets.QFileDialog.getExistingDirectory(self, "Open Directory", "C:\\Users\\user\\Desktop\\Projet\\Projet-et-prog\\Python-DCC\\export")
+        search_dir = QtWidgets.QFileDialog.getExistingDirectory(self, "Open Directory", "C:\\Users\\user\\Desktop\\Projet\\Projet-et-prog\\PythonInDCC\\Project2\\export")
         self.import_directory.setText(search_dir)
         directory = self.import_directory.text()
 

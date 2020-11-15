@@ -15,8 +15,8 @@ class StandaloneEngine(engine.Engine):
     def export(self, in_file):
 
         mayabatch = "D:/Maya/Maya2020/bin/mayabatch.exe"
-        abc_export_script = "C:/Users/user/Desktop/Projet/Projet-et-prog/Python-DCC/pipeline/abc/abc_export.py"
-        out = "C:/Users/user/Desktop/Projet/Projet-et-prog/Python-DCC/export/"
+        abc_export_script = "C:/Users/user/Desktop/Projet/Projet-et-prog/PythonInDCC/Project2/pipeline/abc/abc_export.py"
+        out = "C:/Users/user/Desktop/Projet/Projet-et-prog/PythonInDCC/Project2/export/"
 
         exec_file = "python(\"execfile(\'{}\')\");".format(abc_export_script)
 
@@ -28,7 +28,7 @@ class StandaloneEngine(engine.Engine):
 
     def importation(self, directory):
         hython = "C:/Program Files/Side Effects Software/Houdini 18.0.597/bin/hython.exe"
-        houdini_import = "C:/Users/user/Desktop/Projet/Projet-et-prog/Python-DCC/pipeline/engines/houdini/houdini_import.py"
+        houdini_import = "C:/Users/user/Desktop/Projet/Projet-et-prog/PythonInDCC/Project2/pipeline/engines/houdini/houdini_import.py"
    
         houdini_import_query = [hython, houdini_import, directory, directory]
         print(houdini_import_query)

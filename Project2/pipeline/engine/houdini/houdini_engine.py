@@ -9,6 +9,6 @@ class HoudiniEngine(engine.Engine):
         pass
 
     def save(self):
-        hou.hipFile.save("C:\Users\user\Desktop\Projet\Projet-et-prog\Python-DCC\saved.hip")
+        hou.hipFile.save("C:\Users\user\Desktop\Projet\Projet-et-prog\PythonInDCC\Project2\saved.hip")
         pass
     

@@ -11,6 +11,6 @@ class MayaEngine(engine.Engine):
         pass
 
     def save(self):
-        cmds.file(rename="D:/Artfx/GarciaTD4/Python-DCC/savedfile.ma")
+        cmds.file(rename="C:/Users/user/Desktop/Projet/Projet-et-prog/PythonInDCC/Project2/savedfile.ma")
         cmds.file(save=True, type="mayaAscii")
         pass
